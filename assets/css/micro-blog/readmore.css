@@ -1,5 +1,28 @@
 /* Read More
 /* ---------------------------------------------------------- */
+.gh-card-readmore {
+    display: inline-block;
+    margin-top: 1em;
+    font-weight: 500;
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.gh-card-readmore:hover {
+    color: var(--color-primary-dark);
+}
+
+/* Kartın genişleyen içeriği için geçiş efekti */
+.gh-card-content p {
+    max-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.gh-card-content.expanded p {
+    max-height: 1000px; /* Genişleme sonrası görünür yükseklik */
+}
 
 .gh-readmore {
     padding: 8vmin 4vmin;
