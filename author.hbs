@@ -35,11 +35,9 @@
         {{/author}}
 
         <div class="gh-postfeed">
-        {{#foreach posts}}
-
-            {{> "card"}} {{!-- partials/card.hbs --}}
-
-        {{/foreach}}
+            {{#foreach posts filter="tag:micro"}}
+                {{> "card"}} {{!-- partials/card.hbs --}}
+            {{/foreach}}
         </div>
 
     </div>
